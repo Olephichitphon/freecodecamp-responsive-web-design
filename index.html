@@ -3,13 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>หน้าเว็บสัตว์เลี้ยงของฉัน</title>
+    <title>เว็บไซต์ของฉัน - Semantic HTML</title>
 </head>
 <body>
-    <h1>คำทักทาย</h1>
-    <p>สวัสดีครับ ผมเป็น <span style="color: blue; font-weight: bold;">นักพัฒนาเว็บไซต์</span> กำลังเรียนรู้ HTML.</p>
-    <p>นี่คือข้อความที่ต้องการ <span style="text-decoration: underline;">เน้น</span> บางส่วน.</p>
+
+    <header>
+        <h1>ชื่อเว็บไซต์ของฉัน</h1>
+        <nav>
+            <ul>
+                <li><a href="#">หน้าแรก</a></li>
+                <li><a href="#">เกี่ยวกับเรา</a></li>
+                <li><a href="#">บริการ</a></li>
+                <li><a href="#">ติดต่อ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>บทนำ</h2>
+            <p>ยินดีต้อนรับสู่เว็บไซต์ของฉัน...</p>
+        </section>
+
+        <article>
+            <h3>บทความล่าสุด: การใช้ Semantic HTML</h3>
+            <p>ในบทความนี้ เราจะมาเรียนรู้ว่า Semantic HTML มีความสำคัญอย่างไร...</p>
+            <p>มันช่วยให้เว็บของเราเข้าใจง่ายขึ้นสำหรับทั้งคนและเครื่องจักร.</p>
+            <aside>
+                <h4>บทความที่เกี่ยวข้อง</h4>
+                <p><a href="#">ประโยชน์ของ SEO</a></p>
+            </aside>
+        </article>
+    </main>
+
+    <footer>
+        <p>© 2025 เว็บไซต์ของฉัน. สงวนลิขสิทธิ์.</p>
+    </footer>
+
 </body>
-
-
 </html>
