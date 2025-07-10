@@ -8,11 +8,18 @@
        body { font-family: Arial,sans-sarif; margin: 20 px;} 
        form { border: 1 px solid #ccc; padding: 20 px; border-radius: 8 px; mmax-width: 500 px; margin: 20 px auto;}
        label {display: block; margin-bottom: 5 px; font-weight:bold;}
-        input[type="text"],
-        input[type="password"],
-        input[type="email"],
-        input[type="number"],
-        input[type="date"] }
+    input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"] { /* <--- ตรงนี้ต้องมีวงเล็บปีกกาเปิด */
+    width: calc(100% - 10px);
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+} /* <--- และตรงนี้ต้องมีวงเล็บปีกกาปิด (ซึ่งตอนนี้ยังขาดอยู่ในรูป) */
+
     </style>
     
     
