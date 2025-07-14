@@ -42,6 +42,7 @@ font-weight: normal;
 .checkbox-group input, .radio-group input {
 margin-right: 5px;
 }
+</style>
 </head>
 <body>
 <h1>แบบฟอร์มลงทะเบียนผู้ใช้งาน</h1>
@@ -61,7 +62,7 @@ margin-right: 5px;
 
 <div class="radio-group">
 <p>เพศ:</p>
-<input type="radio" id="male" name="gender" value="male"
+<input type="radio" id="male" name="gender" value="male">
 <label for="male">ชาย</label>
 <input type="radio" id="female" name="gender" value="female">
 <label for="female">หญิง</label>
@@ -72,16 +73,13 @@ margin-right: 5px;
 <div class="checkbox-group">
 <p>ความสนใจ:</p>
 <input type="checkbox" id="coding" name="interest" value="coding">
-<label for="coding">การเขียนโปรแกรม</label>
-<br>
+<label for="coding">การเขียนโปรแกรม</label><br>
 <input type="checkbox" id="design" name="interest" value="design">
-<label for="design">การออกแบบ</label>
-<br>
+<label for="design">การออกแบบ</label><br>
 <input type="checkbox" id="reading" name="interest" value="reading">
-<label for="reading">การอ่าน</label>
-<br>
+<label for="reading">การอ่านหนังสือ</label>
 </div>
-  
+
 <label for="num_children">จำนวนบุตร (ถ้ามี):</label>
 <input type="number" id="num_children" name="num_children" min="0" max="10" value="0">
 
