@@ -1,17 +1,26 @@
-1  <!DOCTYPE html>
-2  <html lang="th">
-3      <head>
-4          <meta charset="UTF-8">
-5          <meta name="viewport" content="width=device-width,initain-scal=1.0">
-6          <title> CSS selector Eaxample</title>
-7      </head>
-8      <body>
-9          <h1><id="main-heading">การใช้ Css selector</h1>
-10         <div class="container">
-11             <p>นี่ย่อหน้าปกติที่อยู่ใน div ที่มี class <span class="hightlight">hightlight</span></p>
-12             <p id="important-text">นี่คือย่อหน้าที่สำคัญที่มี id ที่สำคัญ.</p>
-13             <p class="hightlight">ย่อหน้านี้ก็มี cass <span style="font-style:normal;color:black;">hightlight</span> เช่นกัน.</p>
-14             </div>
-15
-16             
-17 </html>
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Example</title>
+    <link rel="stylesheet" href="selectors_styles.css">
+</head>
+<body>
+
+    <h1 id="main-heading">การใช้ CSS Selectors</h1>
+
+    <div class="container">
+        <p>นี่คือย่อหน้าปกติที่อยู่ใน div ที่มี Class <span class="highlight">highlight</span>.</p>
+        <p id="important-text">ย่อหน้านี้มี ID ที่สำคัญ.</p>
+        <p class="highlight">ย่อหน้านี้ก็มี Class <span style="font-style: normal; color: black;">highlight</span> เช่นกัน.</p>
+    </div>
+
+    <div class="container">
+        <h2>นี่คือหัวข้อรอง</h2>
+        <p>เราสามารถใช้ Selector ประเภทต่างๆ เพื่อกำหนด Style ให้กับ Element HTML ได้อย่างแม่นยำ.</p>
+        <a href="#" class="button">คลิกที่นี่</a>
+    </div>
+
+</body>
+</html>
