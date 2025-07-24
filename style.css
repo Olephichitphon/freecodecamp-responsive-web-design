@@ -1,13 +1,64 @@
+/* Universal Selector - มีผลกับทุก Element */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
+/* Element Selector */
 body {
-  font-family: sans-serif;
-  background-color: #f0f0f0;
+    background-color: #f4f4f4;
+    color: #333;
 }
-
 h1 {
-  color: navy;
+    color: #2c3e50;
+    text-align: center;
+    padding: 20px;
+}
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+div {
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px;
+    background-color: white;
 }
 
-p {
-  color: #333;
+/* ID Selector */
+#main-heading { /* เลือก h1 ที่มี id="main-heading" */
+    color: #e74c3c; /* สีแดงอิฐ - จะมีผลบังคับใช้มากกว่า h1 ทั่วไป */
+    font-size: 3em;
+}
+#important-text { /* เลือก Element ที่มี id="important-text" */
+    font-weight: bold;
+    color: #27ae60; /* สีเขียว */
+    background-color: #ecf0f1;
+    padding: 5px;
+}
+
+/* Class Selector */
+.container { /* เลือก Element ที่มี class="container" */
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.highlight { /* เลือก Element ที่มี class="highlight" */
+    background-color: #f9f9c7; /* สีเหลืองอ่อน */
+    font-style: italic;
+}
+.button {
+    display: inline-block; /* เพื่อให้กำหนด padding และ margin ได้เหมือน Block แต่ยังอยู่ในบรรทัด */
+    background-color: #3498db;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+.button:hover { /* Selector สำหรับเมื่อเมาส์ชี้ */
+    background-color: #2980b9;
 }
